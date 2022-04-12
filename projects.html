@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CodeEaryly | Index</title>
+    <meta name="keywords" content="Coding, NGO, Coding NGO, Kids, Learning, Coding Online, early programming, early coding, early stage programming, kids coding, coding for kids, programming for kids, foundation for kids, computer science for kids, computer for kids, kids computer, learnig for kids, HTML, CSS, JavaScript, Python, Scratch, App development">
+    <meta name="description" content="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.jpg" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7BKD8ZHFG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q7BKD8ZHFG');
+</script>
+</head>
+<body>
+   <div class="content">
+    <header id="navbar">
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    <a href="index.html"><img  src="images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul class="nav_links" id="MenuItems">
+               <li><a href="index.html" >Home</a></li>
+               <li><a href="services.html" >Services</a></li>
+               <li><a href="projects.html" class="active">Projects</a></li>
+               <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Donate</button></a>
+    </header>
+    <section>
+    <div class="slideshow">
+        <div class="slideshow-item">
+            <img src="images/child1.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Early Stage Programming</h5>
+                <p>Our commitment to provide computer programming and literacy programs for kids and schools across Nigeria, in other to bridge the gap of computer illitracy.</p>
+                <br>
+                <a href="#" class="cta"><button>Help Us</button></a>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="images/child2.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>The Girl-Child Progam</h5>
+                <p>A program tailored to use well structured STEM curriculum to specifically empower the girl-child on computer literacy and coding.</p>
+                <br>
+                <a href="#" class="cta"><button id="lap">Help Us</button></a>
+            </div>
+        </div>
+        <div class="slideshow-item">
+            <img src="images/child.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Code Early Africa</h5>
+                <p>The broaer perspective is to take this initiative beyound Nigeria, as we are commited to ensure that the gap in computer literacy in Africa is bridged.</p>
+                <br>
+                <a href="#" class="cta"><button>Help Us</button></a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="customised">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://bit.ly/3ktRjvT" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://bit.ly/3ol7bmN" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="t.ly/WeSB"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-medium"></i></a>
+                </div>
+                <p class="rights-text">&#169; 2020 Created By CodeEarly All Rights Reserved</p>
+            </div>
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter your email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="btn" value="submit">
+                </form>
+                
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!---------------js for toggle menu ------------------------>
+        
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        
+        </script>
+        <!--------------- Sticky Navbar ---------------->
+<script>
+    
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+    }     
+    else {
+        navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.rows{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cols-3{
+    flex-basis:30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.cols-3 img{
+    width: 100%
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/*--------testimonial --------*/
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .cols-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .cols-3:hover{
+    transform: translateY(-20px);
+}
+.testimonial .cols-3 img{
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.cols-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+    
+}
+.testimonial .cols-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*-------------- media query for less than 600 screen size ------------*/
+
+@media only screen and (max-width:600px){
+    .rows{
+        text-align: center;
+    }
+    .cols-3, col-4{
+        flex-basis: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

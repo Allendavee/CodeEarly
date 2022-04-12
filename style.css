@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+.logo{
+    cursor: pointer;
+    max-width: 180px;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.nav_links li a{
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #7CB342;
+}
+.nav_links li .active{
+    color: #7CB342;
+    font-weight: bolder;
+}
+#navbar{
+    background: #fff;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(104, 159, 56, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(104, 159, 56, 0.8);
+}
+.container{
+    display: flex;
+    align-content: center;
+}
+
+.row{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;    
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    padding-right: 55px;
+}
+.col-2 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    padding-left: 87px;
+}
+.col-3{
+    flex-basis: 50%;
+    min-width: 300px;    
+}
+.col-3 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-3 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #000;
+    padding-left: 90px;
+}
+.menu-icon{
+    width: 28px;
+    padding-right: 0;
+    display: none;
+}
+/*----------- footer ----------*/
+.customised{
+    background: #dcedc8;
+    padding: 50px 30px;
+
+}
+.footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.social-media{
+    margin: 20px 0;
+}
+.social-media a{
+    background-color: #dcedc8;
+    width: 75px;
+    height: 75px;
+    padding: 3px 5px;
+    border-radius: 8px;
+    align-items: center;
+    color: #777;
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+        -6px -6px 10px -1px rgba(225,225,225,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.5s;
+}
+.social-media a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset
+        -4px -4px 6px -1px rgba(225,225,225,0.7),
+        -0.5px 0.5px 0px rgba(225, 225, 225, 1),
+        0.5px 0.5px 0px rgba(0,0,0,0.15),
+        0px 12px 10px -10px rgba(0,0,0,0.05);
+    color: #7cb342;
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(2px);
+    transform: scale(0.90);
+}
+.right-col h1{
+    font-size: 26px;
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background: #7cb342;
+    margin: 15px 0;
+}
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.right-col p{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #7cb342;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+.btn{
+    padding: 18px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: #7cb342;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+.btn:hover{
+    opacity: 1;
+}
+.left-col p{
+    font-size: 10px;
+    color: #777;
+}
+/* ---- Sticky Navbar ------ */
+.content {
+  padding: 2px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*----------- About Page -------------*/
+
+#head {
+    padding-top: 20px;
+    text-align: center;
+}
+#head .border{
+    width: 125px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.bool{
+    background: #8bc34a;
+    padding: 0px;
+}
+.customised h4{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 75px 25px;
+    color: #fff;
+}
+.text1 h1{
+    font-size: 40px;
+}
+
+/*--------- Media Querey ---------*/
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 83px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255,255,255,.5) ;
+        
+    }
+    nav ul li{
+        margin-right: 50px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #head{
+        text-align: center;
+    }
+    #head .border{
+        margin: 0 auto;
+    }
+    button{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .logo{
+        max-width: 105px;
+    }
+    .container{
+        max-width: 400px;
+    }
+    .col-2 h1{
+        padding-left: 15px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .col-2 img{
+        padding-right: 40px
+    }
+    .col-3 h1{
+        padding-left: 15px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .col-3 img{
+        padding-right: 70px;
+    }
+    .dip{
+        flex-direction: column-reverse;
+    }
+    .dip .col-2{
+        max-width: 400px;
+    }
+    .dip p{
+        max-width: 300px;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .customised h4{
+        max-width: 400px;
+    }
+    .footer-container{
+        max-width: 600px;
+    }
+    .right-col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .left-col{
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+/*-------------- media query for less than 600 screen size ------------*/
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, col-3, c0l-4{
+        flex-basis: 100%;
+    }
+    .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CodeEaryly | Index</title>
+    <meta name="description" content="" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+   <div class="content">
+    <header id="navbar">
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    <a href="index.html"><img  src="images/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul class="nav_links" id="MenuItems">
+               <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="services.html" id="">Services</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Donate</button></a>
+    </header>
+    
+    <div class="buddy">
+        <div class="containers">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/app1.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>App Dev</h2>
+                    <p>This course is tailored on teaching Teens on how to create cross-platforms applications.</p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/Python.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>Python</h2>
+                    <p>This course is meant to introduce learners to the concepts of object oriented programming </p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/programming.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>Web Dev</h2>
+                    <p>This course covers CSS, HTML, JavaScript & Graphics Design. It also includes mini projects for learners.</p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+       <div class="buddy">
+        <div class="containers">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/app1.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>App Dev</h2>
+                    <p>This course is tailored on teaching Teens on how to create cross-platforms applications.</p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/Python.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>Python</h2>
+                    <p>This course is meant to introduce learners to the concepts of object oriented programming </p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="images/programming.png" alt="">
+                </div>
+                <div class="contentBx">
+                    <h2>Web Dev</h2>
+                    <p>This course covers CSS, HTML, JavaScript & Graphics Design. It also includes mini projects for learners.</p>
+                    <a href="#"> <span>Apply Now</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="customised">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-medium"></i></a>
+                </div>
+                <p class="rights-text">&#169; 2020 Created By CodeEarly All Rights Reserved</p>
+            </div>
+            <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter your email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="btn" value="submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!---------------js for toggle menu ------------------------>
+        
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        
+        </script>
+        <!--------------- Sticky Navbar ---------------->
+<script>
+    
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+    }     
+    else {
+        navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+    
+</body>
+</html>
